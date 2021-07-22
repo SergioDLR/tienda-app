@@ -1,8 +1,14 @@
 import React from 'react';
-import ReactDOM, { Link } from 'react-dom';
+import ReactDOM, {Link} from 'react-dom';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import {Carousel} from 'react-responsive-carousel';
 
+function casa() {
+  return 'hello world';
+}
+function llamar(casa) {
+  alert(casa());
+}
 const Landing = (props) => {
   return (
     <div className='container'>
@@ -24,12 +30,7 @@ const Landing = (props) => {
             <div className='p-3'>
               {' '}
               <h2 className={'display-4'}>Sobre nosotros</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-                obcaecati porro mollitia, dolore neque minus ducimus tempora
-                dignissimos quidem rerum corrupti repellendus, illum cum
-                quibusdam! Sed debitis accusantium quam dolorem?
-              </p>
+              <p style={{color: 'red'}}>mucho texto</p>
             </div>
           </div>
           <div className='card mt-3'>
@@ -41,6 +42,7 @@ const Landing = (props) => {
                 dolorum, nesciunt vel consectetur illum eos ex non quae
                 repudiandae tempora dignissimos.
               </p>
+              <img src='https://iili.io/BdjqsS.png' alt='fafafa' />
             </div>
           </div>
         </div>
